@@ -1,12 +1,12 @@
-import Link from "next/link"
-import React from "react"
-import Particles from "./components/particles"
+import Link from 'next/link';
+import React from 'react';
+import Particles from './components/particles';
 
 const navigation = [
-  { name: "Experience", href: "/experience" },
-  { name: "Projects", href: "/projects" },
-  { name: "Contact", href: "/contact" },
-]
+  { name: 'Experience', href: '/experience' },
+  { name: 'Projects', href: '/projects' },
+  { name: 'Contact', href: '/contact' },
+];
 
 export default function Home() {
   return (
@@ -39,7 +39,7 @@ export default function Home() {
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
         <h2 className=" mx-1 text-sm text-zinc-500 ">
-          {""} Hello, I&apos;m Mahendra, and I&apos;m on a journey to develop
+          {''} Hello, I&apos;m Mahendra, and I&apos;m on a journey to develop
           web apps, services, and infrastructure.
           <br />
           {/* <Link
@@ -47,10 +47,10 @@ export default function Home() {
             href="https://linktr.ee/mahendrakale"
             className="underline duration-500 hover:text-zinc-300"
           >
-            Resume 
+            Resume ;
           </Link> */}
         </h2>
       </div>
     </div>
-  )
+  );
 }
