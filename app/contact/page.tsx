@@ -10,18 +10,21 @@ const socials = [
     href: 'https://drive.google.com/file/d/1G8IB_w9wh5-5AzhsJz6j-JWbFrxD5YAI/view?usp=drive_link',
     label: ' mahendrakale.skncoe.comp@gmail.com',
     handle: 'Resume',
+    id: 13,
   },
   {
     icon: <Linkedin size={25} />,
     href: 'https://www.linkedin.com/in/mahendra-kale/',
     label: ' LinkedIn',
     handle: 'Mahendra Kale',
+    id: 12,
   },
   {
     icon: <Github size={25} />,
     href: 'https://github.com/mahendrakale4',
     label: 'Github',
     handle: '@mahendrakale4',
+    id: 11,
   },
 ];
 

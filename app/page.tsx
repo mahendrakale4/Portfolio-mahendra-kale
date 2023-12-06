@@ -17,8 +17,8 @@ export default function Home() {
             <Link
               key={item.href}
               href={item.href}
-              // className="text-3xl duration-500 text-zinc-500 hover:text-zinc-300 "
-              className="text-3xl  text-zinc-500 hover:text-zinc-300 ">
+              className="text-2xl md:text-4xl duration-500 text-zinc-500 hover:text-zinc-300 ">
+              {/* className="text-3xl  text-zinc-500 hover:text-zinc-300 "> */}
               {item.name}
             </Link>
           ))}
