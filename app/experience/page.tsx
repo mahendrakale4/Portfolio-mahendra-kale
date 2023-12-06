@@ -1,34 +1,34 @@
-import Link from "next/link"
-import { allExperiences } from "contentlayer/generated"
-import { Navigation } from "../components/nav"
-import { Card } from "../components/card"
-import { Article } from "./article"
-import { Eye } from "lucide-react"
-import RedisUtil from "@/util/redis"
+import Link from 'next/link';
+import { allExperiences } from 'contentlayer/generated';
+import { Navigation } from '../components/nav';
+import { Card } from '../components/card';
+import { Article } from './article';
+import { Eye } from 'lucide-react';
+import RedisUtil from '@/util/redis';
 
-import Image from "next/image"
+import Image from 'next/image';
 
-export const revalidate = 60
+export const revalidate = 60;
 
 export default async function ExperiencePage() {
-  await RedisUtil.connect()
-  const views: Record<string, number> = {}
+  await RedisUtil.connect();
+  const views: Record<string, number> = {};
   for (let p of allExperiences) {
     views[p.slug] =
       Number(
         RedisUtil.client
           ? await RedisUtil.client.get(`pageviews:experiences:${p.slug}`)
           : 0
-      ) ?? 0
+      ) ?? 0;
   }
 
   const featured = allExperiences.find(
-    (experience) => experience.slug === "jio"
-  )!
+    (experience) => experience.slug === 'jio'
+  )!;
   const top2 = allExperiences.find(
-    (experience) => experience.slug === "Persistent"
-  )!
-  const top3 = allExperiences.find((experience) => experience.slug === "Cncf")!
+    (experience) => experience.slug === 'Persistent'
+  )!;
+  const top3 = allExperiences.find((experience) => experience.slug === 'Cncf')!;
   const sorted = allExperiences
     .filter(
       (project) =>
@@ -40,7 +40,7 @@ export default async function ExperiencePage() {
       (a, b) =>
         new Date(b.startDate ?? Number.POSITIVE_INFINITY).getTime() -
         new Date(a.startDate ?? Number.POSITIVE_INFINITY).getTime()
-    )
+    );
 
   return (
     <div className="relative pb-16">
@@ -64,7 +64,7 @@ export default async function ExperiencePage() {
                       <time
                         dateTime={new Date(featured.startDate).toISOString()}>
                         {Intl.DateTimeFormat(undefined, {
-                          dateStyle: "medium",
+                          dateStyle: 'medium',
                         }).format(new Date(featured.startDate))}
                       </time>
                     ) : (
@@ -72,8 +72,8 @@ export default async function ExperiencePage() {
                     )}
                   </div>
                   <span className="flex items-center gap-1 text-xs text-zinc-500">
-                    <Eye className="w-4 h-4" />{" "}
-                    {Intl.NumberFormat("en-US", { notation: "compact" }).format(
+                    <Eye className="w-4 h-4" />{' '}
+                    {Intl.NumberFormat('en-US', { notation: 'compact' }).format(
                       views[featured.slug] ?? 0
                     )}
                   </span>
@@ -149,5 +149,5 @@ export default async function ExperiencePage() {
         </div>
       </div>
     </div>
-  )
+  );
 }
