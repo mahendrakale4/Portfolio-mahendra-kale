@@ -14,12 +14,11 @@ export const metadata: Metadata = {
     title: 'Mahendra.com',
     description:
       'Full Stack Developer',
-    url: 'https://chronark.com',
+    url: 'https://mahendrakale.netlify.app/',
     siteName: 'Mahendra.com',
     images: [
       {
-        // url: "https://chronark.com/og.png",
-        url: '',
+        url: 'https://mahendrakale.netlify.app/og.png',
         width: 1920,
         height: 1080,
       },

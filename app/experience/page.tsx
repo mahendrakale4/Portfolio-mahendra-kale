@@ -147,6 +147,15 @@ export default async function ExperiencePage() {
               ))}
           </div>
         </div>
+        <div >
+          <div className="flex justify-center max-w-3000">
+            <Image className="mx-2" src="/c2.jpg" alt="Logo" width={1000} height={100} />
+            {/* <Image className="mx-2" src="/c2.jpg" alt="Logo" width={1000} height={100} /> */}
+            {/* here add multiple images below  */}
+            {/* className="text-center bg-gradient-to-r from-cyan-500 to-blue-500" */}
+            {/* <Image className="mx-2" src="/image2.jpg" alt="Logo" width={1000} height={0} /> */}
+          </div>
+        </div>
       </div>
     </div>
   );

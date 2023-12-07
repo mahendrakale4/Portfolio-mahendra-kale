@@ -7,8 +7,8 @@ import { Card } from '../components/card';
 const socials = [
   {
     icon: <File size={30} />,
-    href: 'https://drive.google.com/file/d/1G8IB_w9wh5-5AzhsJz6j-JWbFrxD5YAI/view?usp=drive_link',
-    label: ' mahendrakale.skncoe.comp@gmail.com',
+    href: 'https://linktr.ee/mahendrakale',
+    label: ' mahendrakalepr@gmail.com',
     handle: 'Resume',
     id: 13,
   },
