@@ -3,7 +3,7 @@
 <div align="center">
     <a href="https://mahendrakale.netlify.app/"><h1 align="center">Mahendrakale.netlify.app</h1></a>
     
-My personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [Dotenv Vault](https://vault.dotenv.org/), a template of [Chronark](https://chronark.com/) and self-hosted with [Docker](https://www.docker.com/).
+
 
 </div>
 
@@ -13,12 +13,12 @@ My personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](h
 
 
 ```bash
-git clone git@github.com:SlinkyPotato/brianpatino.dev.git
-cd brianpatino.dev
+git clone https://github.com/mahendrakale4/Portfolio-mahendra-kale
+cd Portfolio-mahendra-kale
 ```
 
 
-Create a `.env` file.
+Modify `.env` file with your credentials
 
 Then install dependencies and run the development server:
 ```bash
