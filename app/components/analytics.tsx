@@ -6,6 +6,7 @@ export function Analytics() {
     return null;
   }
   return (
+    // need to be update
     <script
       src="https://beamanalytics.b-cdn.net/beam.min.js"
       data-token={token}
